@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <div class="card">
+        <h1>Faktorial</h1>
+        <form name="frm01" method="post" action="./faktorial.php">
+            <table>
+                <tr>
+                    <td>Masukkan Angka</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="txtAngka" /></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" name="faktorial" value="Hasil" /></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="card">
+        <h1>Pangkat Bilangan</h1>
+        <form name="frm2" method="post" action="./pangkat.php">
+            <table>
+                <tr>
+                    <td>Masukan Bilangan</td>
+                    <td><input type="text" name="txtBilangan" require></td>
+                </tr>
+                <tr>
+                    <td>Masukan pangkat</td>
+                    <td><input type="text" name="txtPangkat" require></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="submit" name="pangkat" value="Hasil"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="card">
+        <h1>Test Polindrome</h1>
+        <form name="frm3" method="post" action="./polindrome.php">
+            <table>
+                <tr>
+                    <td>Masukan kata/ kalimat</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="txtPolindrome"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" name="submitPolidrome" value="Hasil"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="card">
+        <h1>Array of Char</h1>
+        <form name="frm4" method="post" action="./arrayofchar.php">
+            <table>
+                <tr>
+                    <td>Masukan kata/ kalimat</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="txtarray"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" name="arrayofchar" value="Hasil"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="card">
+        <h1>Tebak Ganjil atau Genap</h1>
+        <form name="frm4" method="post" action="./ganjilgenap.php">
+            <table>
+                <tr>
+                    <td>Masukan bilangan</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="txtBilangan"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" name="ganjilgenap" value="Hasil"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="card">
+        <h1>menampilkan Bilangan ganjil dan Genap</h1>
+        <form name="frm4" method="post" action="./tampilgangen.php">
+            <table>
+                <tr>
+                    <td>Masukan bilangan</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="txtDari" placeholder="dari"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="txtSampai" placeholder="sampai"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="pilihjenis" id="pilihjenis">
+                            <option value="ganjil">Ganjil</option>
+                            <option value="genap">Genap</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" name="tampilgangen" value="Hasil"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="card">
+        <h1>Membalik String / Char</h1>
+        <form name="frm4" method="post" action="./balikstring.php">
+            <table>
+                <tr>
+                    <td>Masukan kata</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="txtKata"></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" name="balik" value="Hasil"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="card">
+        <h1>menampilkan Bilangan Prima</h1>
+        <form name="frm4" method="post" action="./prima.php">
+            <table>
+                <tr>
+                    <td>Masukan bilangan</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="txtDari" placeholder="dari"></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="txtSampai" placeholder="sampai"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="pilihjenis" id="pilihjenis">
+                            <option value="prima">Prima</option>
+                            <option value="komposit">Komposit</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" name="submit" value="Hasil"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="card">
+            <h1>Array Sort</h1>
+            <form name="frm4" method="post" action="./arraysort.php">
+                <table>
+                    <tr>
+                        <td>Masukan kata/ kalimat</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="txtarray"></td>
+                    </tr>
+                    <td>
+                        <select name="pilihfilter" id="pilihfilter">
+                                <option value="asc">ASC</option>
+                                <option value="desc">DESC</option>
+                            </select>
+                        </td>
+                    <tr>
+                        <td><input type="submit" name="submit" value="Hasil"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+</body>
+
+</html>
+<style>
+    .card {
+        box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1);
+        padding: 20px ;
+        margin: 20px 50px;
+    }
+</style>
